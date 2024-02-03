@@ -6,7 +6,7 @@ const Header = () => {
   const {products} = useShop();
   return (
     <div className="menu">
-      <Link to="/" className="logo">Reactivity</Link>
+      <Link to="/" className="logo">Reactivity App</Link>
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/About">About</Link>
