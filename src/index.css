@@ -9,23 +9,24 @@ a{
 }
 
 .container{
-  max-width: 880px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
 .menu{
   display: flex;
-  justify-content: space-between;
-  text-align: center;
+  align-items: center;
+  justify-content: space-around;
   margin-bottom: 50px;
 }
+
 .logo{
-  margin: 10px;
-  text-transform: uppercase;
-  color: #1877c9;
-  font-size: 30px;
-  font-weight: 800;
   text-decoration: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 10px;
+  color: #8447ff;
 }
 .links{
   margin: 10px;
@@ -41,7 +42,7 @@ a{
   height: 40px;
   border-radius: 50%;
   color: #fff;
-  background-color: #1877c9;
+  background-color: #8447ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,33 +52,38 @@ a{
 
 .grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 13px;
 }
+
 .card{
   width: 100%;
-  height: 400px;
-  border-radius: 10px;
-  box-sizing: 2px 2px 2px rgba(0,0,0,0.2);
+  height: 300px;
   position: relative;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  border-radius: 10px;
 }
 .card .info{
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
-  padding: 10px 0px;
-  color: #fff;
+  justify-content: space-between;
+  padding: 6px 0px;
+  width: 100%;
   border-radius: 0px 0px 10px 10px;
+  color: #fff;
 }
-.card span{
-  font-size: 1.50rem;
+.card .info span{
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background: rgb(194, 151, 255);
+  padding: 4px 8px;
+  border-radius: 12px;
   margin: 10px;
-  font-weight: 700;
 }
 .btn{
   position: absolute;
@@ -86,7 +92,7 @@ a{
   border-radius: 50%;
   border: none;
   right: 10px;
-  background-color: #1877c9;
+  background-color: #8447ff;
   color: #fff;
   margin-top: 10px;
   cursor: pointer;
@@ -161,7 +167,7 @@ a{
   cursor: pointer;
 }
 .payment-card:hover, .payment-card.selected{
-  background-color: rgba(24, 118, 201, 0.159);
+  background-color: rgba(142, 24, 201, 0.159);
   border-color: rgb(8, 92, 165);
 }
 .form-control{
@@ -176,7 +182,7 @@ a{
   width: 94%;
   margin: 10px 12px;
   padding: 20px;
-  background-color: rgba(24, 119, 201);
+  background-color: rgb(132, 71, 255);
   color: #fff;
   border: 0;
   border-radius: 15px;
